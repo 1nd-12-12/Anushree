@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#07030d" />
+  <title>ANUSHREE — A Beautiful Soul in a Digital Universe</title>
+
+  <!-- Premium Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Custom Loading Screen -->
+  <div id="loader" class="loader-overlay" aria-hidden="true">
+    <div class="loader-ring"></div>
+    <p class="loader-text">ALIGNING THE STARS...</p>
+  </div>
+
+  <!-- Background Universe Canvas (Stars, Particles & Sparkles) -->
+  <canvas id="universe-canvas"></canvas>
+
+  <!-- Floating Hearts Container -->
+  <div id="floating-hearts" aria-hidden="true"></div>
+
+  <!-- Intro / Welcome Screen -->
+  <section id="intro-screen" class="intro-screen">
+    <div class="intro-content">
+      <p class="intro-subtitle">SOMEONE SPECIAL IS HERE...</p>
+      <h1 class="intro-name" data-text="ANUSHREE">ANUSHREE</h1>
+      <p class="intro-tagline">A Beautiful Soul in a Digital Universe</p>
+      <button id="enter-btn" class="btn-glow">
+        <span>ENTER MY WORLD ✨</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Main Website Content -->
+  <main id="main-content" class="main-content hidden">
+    <!-- Top Floating Controls -->
+    <header class="top-bar">
+      <div class="brand-pill">✨ ANUSHREE'S UNIVERSE</div>
+      <button id="music-toggle" class="music-btn" aria-label="Toggle Background Music">
+        <span class="music-icon">🔇</span>
+        <span class="music-label">Music: OFF</span>
+      </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-card glass-card reveal">
+        <div class="live-clock-wrap">
+          <span class="pulse-dot"></span>
+          <span id="live-clock" class="live-clock">00:00:00</span>
+        </div>
+
+        <p class="hero-welcome">Welcome To Anushree's World 💗</p>
+        <h2 class="hero-name">ANUSHREE</h2>
+        <p class="hero-quote">"Some people are special, and some become unforgettable."</p>
+
+        <div class="typing-box">
+          <span id="typing-text"></span><span class="cursor">|</span>
+        </div>
+
+        <a href="#messages" class="btn-secondary">Explore The Universe ↓</a>
+      </div>
+    </section>
+
+    <!-- Special Message Section (Cinematic Vertical Stream) -->
+    <section id="messages" class="section messages-section">
+      <h3 class="section-title reveal">Written In The Stars ✨</h3>
+      <p class="section-subtitle reveal">Every word here belongs to you</p>
+
+      <div class="cinematic-stream-wrapper glass-card reveal">
+        <div class="cinematic-stream" id="cinematic-stream">
+          <div class="stream-track">
+            <p class="stream-line">Anushree, you are truly special.</p>
+            <p class="stream-line">Your smile makes everything beautiful.</p>
+            <p class="stream-line">You deserve all the happiness in this universe.</p>
+            <p class="stream-line">Keep shining like the brightest star.</p>
+            <p class="stream-line">Never forget how precious you are.</p>
+            <p class="stream-line">Your presence makes ordinary moments magical.</p>
+            <!-- Duplicated for seamless infinite vertical loop -->
+            <p class="stream-line">Anushree, you are truly special.</p>
+            <p class="stream-line">Your smile makes everything beautiful.</p>
+            <p class="stream-line">You deserve all the happiness in this universe.</p>
+            <p class="stream-line">Keep shining like the brightest star.</p>
+            <p class="stream-line">Never forget how precious you are.</p>
+            <p class="stream-line">Your presence makes ordinary moments magical.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beautiful Compliments Section -->
+    <section id="compliments" class="section compliments-section">
+      <h3 class="section-title reveal">What Makes You, You 💫</h3>
+      <p class="section-subtitle reveal">Tap any card to feel the glow</p>
+
+      <div class="compliments-grid">
+        <div class="compliment-card glass-card reveal" data-note="Royalty isn't a crown, it's the grace you carry every day.">
+          <div class="card-emoji">👑</div>
+          <h4>Queen of Hearts</h4>
+          <p class="card-note"></p>
+        </div>
+
+        <div class="compliment-card glass-card reveal" data-note="Kindness, warmth, and pure light—that's your aura.">
+          <div class="card-emoji">🌸</div>
+          <h4>Beautiful Soul</h4>
+          <p class="card-note"></p>
+        </div>
+
+        <div class="compliment-card glass-card reveal" data-note="Even the darkest days feel lighter when you're around.">
+          <div class="card-emoji">☀️</div>
+          <h4>Sunshine Energy</h4>
+          <p class="card-note"></p>
+        </div>
+
+        <div class="compliment-card glass-card reveal" data-note="You turn simple conversations into unforgettable memories.">
+          <div class="card-emoji">✨</div>
+          <h4>Pure Magic</h4>
+          <p class="card-note"></p>
+        </div>
+
+        <div class="compliment-card glass-card reveal" data-note="Rare, priceless, and impossible to ever replace.">
+          <div class="card-emoji">💎</div>
+          <h4>One of a Kind</h4>
+          <p class="card-note"></p>
+        </div>
+
+        <div class="compliment-card glass-card reveal" data-note="The kind of person people only hope to meet once in a lifetime.">
+          <div class="card-emoji">🦋</div>
+          <h4>Dream Girl</h4>
+          <p class="card-note"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Secret Message Section -->
+    <section id="secret" class="section secret-section">
+      <div class="secret-box glass-card reveal" id="secret-box">
+        <div class="lock-icon" id="lock-icon">🔒</div>
+        <h3 class="section-title">A Secret Just For You</h3>
+        <p class="secret-hint" id="secret-hint">Locked with stardust and unspoken feelings.</p>
+
+        <button id="unlock-btn" class="btn-glow">
+          <span>OPEN YOUR SECRET GIFT 🎁</span>
+        </button>
+
+        <div id="secret-reveal" class="secret-reveal hidden">
+          <p class="secret-message">
+            "Anushree, no matter where life takes you, remember that there is someone out there who genuinely admires your smile, values your presence, and wishes you endless peace, love, and success. You are unforgettable."
+          </p>
+          <p class="secret-signature">Made With Special Feelings For Anushree ❤️</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final Surprise Section -->
+    <section id="final" class="section final-section reveal">
+      <h2 class="final-name">ANUSHREE ❤️</h2>
+      <p class="final-quote">"You are not just a name, you are a beautiful feeling."</p>
+      <button id="surprise-btn" class="btn-glow">
+        <span>ONE MORE SURPRISE 💝</span>
+      </button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Crafted in the Digital Universe • Exclusively for <span>Anushree</span> ✨</p>
+    </footer>
+  </main>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to Top">↑</button>
+
+  <!-- Full-Screen Final Surprise Modal -->
+  <div id="surprise-modal" class="surprise-modal hidden" aria-hidden="true">
+    <canvas id="heart-explosion-canvas"></canvas>
+    <div class="surprise-modal-content glass-card">
+      <div class="modal-heart">💖</div>
+      <h2>Always Stay Magical, Anushree</h2>
+      <p>
+        Thank you for being the most wonderful part of this universe. May your life always be filled with laughter, soft sunsets, and dreams coming true.
+      </p>
+      <button id="close-modal-btn" class="btn-secondary">Close With Love ✨</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
